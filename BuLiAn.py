@@ -62,6 +62,7 @@ def filter_season(df_data):
     start_index = seasons.index(start_raw)
     end_index = seasons.index(end_raw)+1
     seasons_selected = seasons[start_index:end_index]
+    #HOLA
     df_filtered_season = df_data[df_data['season'].isin(seasons_selected)]
     return df_filtered_season
 
