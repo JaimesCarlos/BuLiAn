@@ -53,7 +53,7 @@ def get_unique_matchdays(df_data):
 def get_unique_teams(df_data):
     unique_teams = np.unique(df_data.team).tolist()
     return unique_teams
-
+#holaaaaa
 def filter_season(df_data):
     df_filtered_season = pd.DataFrame()
     seasons = np.unique(df_data.season).tolist() #season list "13-14"
@@ -65,7 +65,7 @@ def filter_season(df_data):
     #HOLA
     df_filtered_season = df_data[df_data['season'].isin(seasons_selected)]
     return df_filtered_season
-
+#holaaaaa
 def filter_matchday(df_data):
     df_filtered_matchday = pd.DataFrame()
     matchdays_list = list(range(selected_matchdays[0], selected_matchdays[1]+1))
